@@ -1,201 +1,200 @@
 @font-face {
-  font-family: "Burbank";
-  src: url("BurbankBigRegularTT-Black.woff2") format("woff2"),
-      url("BurbankBigRegularTT-Black.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'Fortnite-Black';
+    src: url('BurbankBigRegular-Black.woff2') format('woff2'),
+        url('BurbankBigRegular-Black.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
 }
 
-@keyframes pattern {
-  0% {
-    transform: translate3d(0%, 0%, 1px);
-  }
-
-  50% {
-      transform: translate3d(-50%, -50%, 1px);
-  }
-
-  100% {
-      transform: translate3d(0%, 0%, 1px);
-  }
+@font-face {
+    font-family: 'Fortnite-Bold';
+    src: url('BurbankBigRegular-Bold.woff2') format('woff2'),
+        url('BurbankBigRegular-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
 }
 
-.text-shadow {
-    text-shadow: 0 2px 4px rgba(0,0,0,0.10);
+@font-face {
+    font-family: 'Fortnite-Medium';
+    src: url('BurbankBigRegular-Medium.woff2') format('woff2'),
+        url('BurbankBigRegular-Medium.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
 }
 
-.text-shadow-md {
-    text-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 2px 4px rgba(0,0,0,0.08);
+.FNB { font-family: 'Fortnite-Bold' !important; }
+
+.fs50 { font-size: 50% !important; }
+
+small { vertical-align: text-top; }
+
+.epic { color: white !important; background-color: #bd3ffa; border-radius: 0.5rem; }
+
+.rare { color: white !important; background-color: #2fd5e8; border-radius: 0.5rem; }
+
+button {
+  border: 1px solid rgba(0, 0, 0, 0.25) !important;
+  font-size: 1.75rem !important;
 }
 
-.text-shadow-lg {
-  text-shadow: 0 15px 30px rgba(0,0,0,0.2), 0 5px 15px rgba(0,0,0,0.08);
+.w-60 { width: 60% !important; }
+
+button, .btn, .C-button, .S-button {
+  transition-duration: 1s !important;
 }
 
-.text-shadow-none {
-  text-shadow: none;
-}
-
-.STROKE {
-  -webkit-text-stroke: 1px black;
-  text-stroke: 1px black;
-}
-
-body {
-  background-image: url(img/mobile-header-1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-@media (min-width: 640px) {
-  
-  body {
-    background-image: url(img/desktop-header-1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-
-}
-
-.S2 {
-  background-color: rgb(68, 15, 104);
+.S2, .S3, .S4 {
+  display: none;
 }
 
 .S3 {
-  background-image: url(img/beam-2.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  flex-direction: column;
 }
 
-.Burbank {
-  font-family: "Burbank";
-  text-transform: uppercase;
+.console-1 {
+  height: 0;
+  position: relative;
+  width: 100%;
+  padding-bottom: 50%;
 }
 
-.TEST {
-  clip-path: polygon(0% 16%, 100% 6%, 98% 100%, 2% 90%);
-  padding: 0.3875em 1em 0.125em;
-  font-family: "Burbank";
-}
-
-.FORTNITE-GREEN-BG {
-  background-color: rgb(139, 255, 58);
-}
-
-.FORTNITE-PINK {
-  color: rgb(244, 0, 144);
-}
-
-.FORTNITE-PINK-BORDER {
-  border-color: rgb(244, 0, 144);
-}
-
-.FORTNITE-YELLOW-BORDER {
-  border-color: #ff0;
-}
-
-.FORTNITE-PINK-BG {
-  background-color: rgb(244, 0, 144);
-}
-
-.FORTNITE-YELLOW {
-  color: #ff0;
-}
-
-.FORTNITE-YELLOW-BG {
-  background-color: #ff0;
-}
-
-.CPOLYGON {
-  clip-path: polygon(0% 16%, 100% 6%, 98% 100%, 2% 90%);
-  padding: 1.25em 1em 0.5em;
-}
-
-.CPOLYGON-2 {
-  clip-path: polygon(0% 16%, 100% 6%, 98% 100%, 2% 90%);
-  padding: 1em 1em 0.5em;
-}
-
-.CPOLYGON-3 {
-  background-color: rgb(244, 0, 144);
-  clip-path: polygon(0% 16%, 100% 6%, 98% 100%, 4% 90%);
-  padding: 0.75em 0.5em 0.5em;
-}
-
-.CPOLYGON-4 {
-  background-color: rgb(244, 0, 144);
-  clip-path: polygon(0% 12%, 100% 6%, 98% 100%, 4% 92%);
-  padding: 2rem 1rem;
-}
-
-.CPOLYGON-5 {
-  background-color: #ff0;
-  clip-path: polygon(0% 12%, 100% 6%, 98% 100%, 4% 92%);
-  padding: 2.5rem 1rem;
-}
-
-.CPOLYGON-6 {
-  clip-path: polygon(0% 16%, 100% 6%, 98% 100%, 2% 90%);
-  padding: 2em 0.5em 1em;
-}
-
-.patt {
-  position: absolute;
-  top: 0px;
-  left: 0px;
+.console-2 {
   width: 100%;
   height: 100%;
-  z-index: 0;
-  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #33ff33;
+  background-color: #282828;
+  font-family: "Fortnite-Bold";
+  font-size: 1.1rem;
+  padding: 0.75rem;
 }
 
-.ern {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 200%;
-  height: 400%;
-  background: url(img/pattern.png) 0px 0px / 250px repeat;
-  z-index: 100;
-  animation: 100s linear 0s infinite normal both running pattern;
+.progress-bar {
+  background: black;
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+.progress {
+  border-radius: 0;
+}
+
+u { display: contents; }
+
+.fs1rem { font-size: 1rem !important; }
+
+.fs11rem { font-size: 1.1rem !important; }
+
+.fs12rem { font-size: 1.2rem !important; }
+
+.fs13rem { font-size: 1.3rem !important; }
+
+.fs14rem { font-size: 1.4rem !important; }
+
+.fs15rem { font-size: 1.5rem !important; }
+
+.fs2rem { font-size: 2rem !important;}
+
+.glide__slides {
+  margin-bottom: 0 !important;
+}
+
+.F-button {
+  cursor: pointer;
+  background: rgb(252,161,32);
+  background: linear-gradient(180deg, rgba(252,161,32,1) 0%, rgba(253,213,47,1) 100%);
+}
+
+.CL-button {
+  display: none;
+  cursor: pointer;
+  background: rgb(252,161,32);
+  background: linear-gradient(180deg, rgba(252,161,32,1) 0%, rgba(253,213,47,1) 100%);
+}
+
+.C-button, .S-button {
+  cursor: pointer;
+  background: rgb(252,161,32);
+  background: linear-gradient(180deg, rgba(252,161,32,1) 0%, rgba(253,213,47,1) 100%);
+  opacity: 0.5;
+}
+
+body {
+  background: url(bg.jpg) center/cover no-repeat fixed;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: "Fortnite-Black";
+  text-transform: uppercase;
+  color: black;
 }
 
 input {
-  text-align: center;
-  text-align-last: center;
+  border: 1px solid rgba(0, 0, 0, 0.25) !important;
 }
 
-.noUi-horizontal .noUi-handle {
-  background-color: #ff0 !important;
+input, p {
+  font-family: "Fortnite-Bold";
+  text-align: center !important;
+  text-align-last: center !important;
 }
 
-.noUi-handle:before, .noUi-handle:after {
-  background: #000;
+.F-platform, .V-bucks {
+  opacity: 0.5;
+  transition-duration: 1s;
 }
 
-.noUi-handle {
-  box-shadow: none;
-  border: 1px solid black;
+.xD {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  background-color: red;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background: rgb(252,161,32);
+  background: linear-gradient(180deg, rgba(252,161,32,1) 0%, rgba(253,213,47,1) 100%);
 }
 
-small {
-  font-size: 60% !important;
-  vertical-align: middle;
+.LH1 { line-height: 1 !important; }
+
+.TTN { text-transform: none !important; }
+
+.TTU { text-transform: uppercase !important; }
+
+.MAIN {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: url(pattern.jpg) center/cover no-repeat fixed;
+  border-radius: 0.5rem;
 }
 
-big {
-  vertical-align: middle;
-  font-size: 150%;
+.svg-playstation, .svg-xbox, .svg-switch, .svg-android, .svg-apple, .svg-windows, .svg-desktop {
+  max-height: 4rem;
 }
 
-.big-2 {
-  font-size: 90% !important;
-}
+@media (min-width: 768px) {
 
-.big-3 {
-  font-size: 120% !important;
+  .w-60 { width: 37.5% !important; }
+
+  .console-2 { padding: 2rem !important; }
+
+  .w-75 { width: 50% !important; }
+
+  .fs12rem { font-size: 1.7rem !important; }
+
+  h3 { font-size: 2.25rem !important; }
+
+  .fs15rem { font-size: 2rem !important; }
+
+  .fs13rem { font-size: 1.8rem !important; }
+
+  .fs2rem { font-size: 2.5rem !important; }
+
 }
